@@ -14,3 +14,11 @@ var evenFibonacciNumbers = function(num){
     }
     return sum;
 };
+
+var numberInput2 = document.querySelector("[name=inputNumber2]");
+var resultArea2 = document.querySelector(".even-fibonacci-numbers");
+
+numberInput2.addEventListener('input', function() {
+    var val = evenFibonacciNumbers(this.value);
+    resultArea2.textContent = val;
+});
