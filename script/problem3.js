@@ -18,3 +18,11 @@ var maxPrimeFactor = function(input){
 	}
 	return input;
 }
+
+var numberInput3 = document.querySelector("[name=inputNumber3]");
+var resultArea3 = document.querySelector(".max-prime-factor");
+
+numberInput3.addEventListener('input', function() {
+    var val = maxPrimeFactor(this.value);
+    resultArea3.textContent = val;
+});
